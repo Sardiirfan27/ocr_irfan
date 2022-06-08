@@ -17,14 +17,14 @@ class OCR:
 
     def inicial(self):
         #conteudo inicial da pagina
-        st.title("OCR Programa")
-        st.write("Optical Character Recognition (OCR) implementado com Python")
-        imagem = st.file_uploader("Selecione alguma imagem", type=["png","jpg"])
+        st.title("OCR JOMBLO EXPERT")
+        st.write("Optical Character Recognition (OCR) Coba-coba aja")
+        imagem = st.file_uploader("Masukan Image JOMBLO EXPERT", type=["png","jpg"])
         #se selecionar alguma imagem...
         if imagem:
             img = Image.open(imagem)
             st.image(img, width=350)
-            st.info("Texto extraído")
+            st.info("Hasil Ekstraksi JOMBLO EXPERT")
             self.texto = self.extrair_texto(img)
             st.write("{}".format(self.texto))
             
